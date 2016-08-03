@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Registar CV</title>
+      <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h3>Registar Curriculum Vitae</h3>
+      <form method="post" action="<?php echo base_url('control/guardar');?>">
+        <div class="col-md-6">
+        <div class="form-group input-group">
+          <span class="input-group-addon">Direccion Email:</span>
+          <input type="text" class="form-control" name="email" />
+        </div>
+        <div class="form-group input-group">
+          <span class="input-group-addon">Confirmar Email:</span>
+          <input type="text" class="form-control" name="Confirmar" />
+        </div>
+        <div class="form-group input-group">
+          <span class="input-group-addon">Crear Contaseña:</span>
+          <input type="text" class="form-control" name="Confirmar" />
+        </div>
+        <div class="form-group input-group">
+          <span class="input-group-addon">Nombre(s):</span>
+          <input type="text" class="form-control" name="Nombre" />
+        </div>
+
+        <div class="form-group input-group">
+          <span class="input-group-addon">Apellido(s):</span>
+          <input type="text" class="form-control" name="LastName" />
+        </div>
+        <div class="form-group input-group">
+          <span class="input-group-addon">Documento de Indentidad:</span>
+          <input type="text" class="form-control" name="Identidaad" />
+        </div>
+        <div class="form-group input-group">
+          <span class="input-group-addon">Tipo de Documento:</span>
+          <input type="text" class="form-control" name="tipo" />
+        </div>
+        <div class="form-group input-group">
+          <span class="input-group-addon">Telefono Fijo:</span>
+          <input type="text" class="form-control" name="Confirmar" />
+        </div>
+        <div class="form-group input-group">
+          <span class="input-group-addon">Telefono Movil:</span>
+          <input type="text" class="form-control" name="Confirmar" />
+        </div>
+        <div class="form-group">
+            <label id="tipolbl" style="align:center" class="col-sm-2 control-label">Sexo:</label>
+            <select required autocomplete='off' class="browser-default"  id="inSexo">
+              <option value="">Seleccionar</option>
+              <option value="Tipo1">Masculino</option>
+              <option value="Tipo1">Femenino</option>
+            </select>
+          </div>
+        <div class="form-group input-group">
+          <span class="input-group-addon">Direccion:</span>
+          <input type="text" class="form-control" name="Address" />
+        </div>
+        <div class="form-group input-group">
+          <span class="input-group-addon">Codigo Postal:</span>
+          <input type="text" class="form-control" name="Cpostal" />
+        </div>
+        <div class="form-group input-group">
+          <span class="input-group-addon">Ciudad:</span>
+          <input type="text" class="form-control" name="ciudad" />
+        </div>
+        <div class="form-group input-group">
+          <span class="input-group-addon">Pais:</span>
+          <input type="text" class="form-control" name="pais" />
+        </div>
+        <div class="form-group input-group">
+          <span class="input-group-addon">Fecha De Nacimineto:</span>
+          <input type="text" class="form-control" name="fn" />
+        </div>
+        <div class="form-group input-group">
+          <span class="input-group-addon">Nacionalidad:</span>
+          <input type="text" class="form-control" name="nacionalidad" />
+        </div>
+
+		<div class="form-group input-group">
+            <label for="estadoCivil"id="tipolbl07" style="align:center" class="col-sm-5 control-label">Estado Civil:</label>
+            <select required autocomplete='off' style="align:right" class="input-group"  id="estadoCivil">
+              <option value="">Seleccionar</option>
+              <option value="Tipo1">Soltero(a)</option>
+              <option value="Tipo1">Casado(a)</option>
+              <option value="Tipo1">Divorciado(a)</option>
+              <option value="Tipo1">Viudo(a)</option>
+              <option value="Tipo1">Union Libre</option>
+			</select>
+        </div>
+
+        <div class="form-group input-group">
+            <label id="tipolbl" style="align:center" class="col-sm-5 control-label">Licencia de Conducir:</label>
+            <select required autocomplete='off' class="input-group"  id="inSexo">
+              <option value="">Seleccionar</option>
+              <option value="Tipo1">Si</option>
+              <option value="Tipo1">No</option>
+            </select>
+		  </div>
+
+           <div class="form-group input-group">
+                <label id="tipolbl" style="align:Right" class="col-sm-5 control-label">Vehiculo Propio:</label>
+                <select required autocomplete='off' class="input-group"  id="inVehiculo">
+                <option value="">Seleccionar</option>
+                <option value="Tipo1">Si</option>
+                <option value="Tipo1">No</option>
+              </select>
+  			</div>
+            <div class="form-group input-group">
+                <label id="tipolbl" style="align:center" class="col-sm-2 control-label">Nivel Academico:</label>
+                <select required autocomplete='off' class="browser-default"  id="inAcademico">
+                  <option value="">Seleccionar</option>
+                  <option value="Tipo1">Bachillerato</option>
+                  <option value="Tipo1">Estudiante Universitario</option>
+				  <option value="Tipo1">Tecnico</option>
+				  <option value="Tipo1">Diplomado/Licenciatura</option>
+				  <option value="Tipo1">Grado/PostGrado/Maestria</option>
+				  <option value="Tipo1">Doctorado/PostDoctorado</option>
+                </select>
+    		 </div>
+			 <div class="form-group input-group">
+          <span class="input-group-addon">Titulo Obtenido:</span>
+          <input type="text" class="form-control" name="Tobtenido" />
+        </div>
+		 <div class="form-group input-group">
+            <label id="tipolbl06" style="align:center" class="col-sm-2 control-label">ISCO:</label>
+				<select required autocomplete='off' class="browser-default"  id="inisco">
+					<option value="">Seleccionar</option>
+					<option value="Tipo1">Personal De Direccion y alta gerencia</option>
+					<option value="Tipo1">Profesionales Cientificos</option>
+					<option value="Tipo1">Tecnicos Y Profesionales Nivel medio</option>
+					<option value="Tipo1">Empleados de Oficina</option>
+					<option value="Tipo1">Trabajadres y Empleados de Comercio</option>
+					<option value="Tipo1">Agricultores/Agropecuarios/Pesqueros</option>
+					<option value="Tipo1">Oficiales artes mecanicas y otros oficios</option>
+					 <option value="Tipo1">Operadores maquinas y montadores</option>
+					<option value="Tipo1">Trabajadores no clalificado</option>
+					<option value="Tipo1">Fuerzas armadas</option>
+                </select>
+    	</div>
+		<div class="form-group input-group">
+            <label id="tipolbl" style="align:center" class="col-sm-2 control-label">Area Principal:</label>
+            <select required autocomplete='off' class="browser-default"  id="inPrincipal">
+                  <option value="">Seleccionar</option>
+                  <option value="Tipo1">Administracion</option>
+                  <option value="Tipo1">Aeronautica</option>
+				  <option value="Tipo1">Agrimensura</option>
+				  <option value="Tipo1">Agronomia/Agricultura</option>
+				  <option value="Tipo1">Arquitectura/Construccion</option>
+				  <option value="Tipo1">Atencion al cliente</option>
+				  <option value="Tipo1">Banco/Servicios financieros</option>
+				  <option value="Tipo1">Biblioteconomia/Documentacion</option>
+				  <option value="Tipo1">Ciencias Economicas</option>
+				  <option value="Tipo1">Ciencias Empresariales</option>
+				  <option value="Tipo1">Ciencias Sociales</option>
+				  <option value="Tipo1">Compras</option>
+				  <option value="Tipo1">Comunicacion, Publicidad, Medios</option>
+				  <option value="Tipo1">Consultoria, Analisis</option>
+				  <option value="Tipo1">Contabilidad</option>
+				  <option value="Tipo1">Creatividad, Diseño, Multimedia</option>
+				  <option value="Tipo1">Derecho</option>
+				  <option value="Tipo1">Electricidad/Electronica</option>
+				  <option value="Tipo1">Farmacia</option>
+				  <option value="Tipo1">Finanzas</option>
+				  <option value="Tipo1">Fisica</option>
+				  <option value="Tipo1">Gestion/ Alta Direccion</option>
+				  <option value="Tipo1">Impuestos</option>
+				  <option value="Tipo1">Industria,Produccion,Calidad</option>
+				  <option value="Tipo1">Ingenieria</option>
+				  <option value="Tipo1">Ingenieria civil/ Estructural</option>
+				  <option value="Tipo1">Ingenieria Electrica</option>
+				  <option value="Tipo1">Ingenieria Electronica</option>
+				  <option value="Tipo1">Ingenieria Industrial</option>
+				  <option value="Tipo1">Ingenieria Quimica</option>
+				  <option value="Tipo1">Ingenieria Sanitaria Ambiental</option>
+				  <option value="Tipo1">Ingenieria De Sistema</option>
+				  <option value="Tipo1">Informatica, Sistema, Internet</option>
+				  <option value="Tipo1">Ingenieria Telecomunicaciones</option>
+				  <option value="Tipo1">Investigacion de mercado</option>
+				  <option value="Tipo1">Investigacion y Desarrollo</option>
+				  <option value="Tipo1">Letras,Humanidades y Filosofia</option>
+				  <option value="Tipo1">Logistica,Distribucion</option>
+				  <option value="Tipo1">Marketing</option>
+				  <option value="Tipo1">Medio Ambiente</option>
+				  <option value="Tipo1">Prevencion de Riesgos</option>
+				  <option value="Tipo1">Psicoogia</option>
+				  <option value="Tipo1">Qumica/Biologia</option>
+				  <option value="Tipo1">Recepcion</option>
+				  <option value="Tipo1">Recursos Humanos</option>
+				  <option value="Tipo1">Salud/Medicina</option>
+				  <option value="Tipo1">Secretariado</option>
+				  <option value="Tipo1">Seguridad y Salud Ocupacional</option>
+				  <option value="Tipo1">Seguro</option>
+				  <option value="Tipo1">Servicio/Soporte Tecnico</option>
+				  <option value="Tipo1">Servicios Domesticos</option>
+				  <option value="Tipo1">Telecomunicaciones</option>
+				  <option value="Tipo1">Tele Marketing</option>
+				  <option value="Tipo1">Tele Trabajo</option>
+				  <option value="Tipo1">Trabajo Social</option>
+				  <option value="Tipo1">Ingenieria Mecanica</option>
+				  <option value="Tipo1">Traduccion,Interpretacion,Idiomas</option>
+				  <option value="Tipo1">Transporte</option>
+				  <option value="Tipo1">Turismo/Hoteleria</option>
+				  <option value="Tipo1">Ventas</option>
+				  <option value="Tipo1">Oficios Diversos</option>
+				  <option value="Tipo1">Sin Calificar</option>
+                </select>
+    		 </div>
+		<div class="form-group input-group">
+          <span class="input-group-addon">Pagina Web de tenerla:</span>
+          <input type="text" class="form-control" name="paginaWeb" />
+        </div>
+		 <div class="form-group input-group">
+            <label id="tipolbl08" style="align:center" class="col-sm-5 control-label">Situacion Laboral:</label>
+            <select required autocomplete='off' class="input-group"  id="inSituacion">
+              <option value="">Seleccionar</option>
+              <option value="Tipo1">Con Empleo</option>
+              <option value="Tipo1">Sin Empleo</option>
+            </select>
+		  </div>
+		   <div class="form-group input-group">
+            <label id="tipolbl" style="align:center" class="col-sm-5 control-label">Experiencia Laboral:</label>
+            <select required autocomplete='off' class="input-group"  id="inExperiencia">
+              <option value="">Años de experiencia</option>
+              <option value="Tipo1">Ninguno</option>
+              <option value="Tipo1">uno o mas años</option>
+			  <option value="Tipo1">Dos o mas años</option>
+			  <option value="Tipo1">Cinco o mas años</option>
+			  <option value="Tipo1">Diez o mas años</option>
+            </select>
+		  </div>		  
+        <div class="text-center">
+          <button class="btn btn-primary" type="submit">Registrar Curriculum</button>
+        </div>
+      </div>
+    </form>
+    </div>
+    </body>
+
+</html>
